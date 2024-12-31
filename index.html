@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultra Match</title>
+    <style>
+       body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: aqua;
+       }
+       .grid-container {
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        width: 80%;
+        max-width: 1200px;
+       }
+       .grid-item {
+        position: relative;
+        overflow: hidden;
+        padding-top: 5%;
+        
+       }
+       .grid-item img {
+        /* position: absolute; */
+        /* top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; */
+       }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button id="startButton">
+            Start/Reset
+        </button>
+        <button>
+            Audio Toggle
+        </button>
+        <div id="scoreContainer">
+            <h1> Score:
+                <p id="displayScore"></p>
+            </h1>
+        </div>
+        <div id="timerContainer">
+            <h1> Time:
+                <p id="displayTime"></p>
+            </h1>
+        </div>
+    </div>
+    <div class="grid-container"> 
+        <div id="slot_A" class="grid-item"><img src="./media/cardgameback.png" alt="Image 1"></div> 
+        <div id="slot_B" class="grid-item"><img src="./media/cardgameback.png" alt="Image 2"></div> 
+        <div id="slot_C" class="grid-item"><img src="./media/cardgameback.png" alt="Image 3"></div> 
+        <div id="slot_D" class="grid-item"><img src="./media/cardgameback.png" alt="Image 4"></div> 
+        <div id="slot_E" class="grid-item"><img src="./media/cardgameback.png" alt="Image 5"></div> 
+        <div id="slot_F" class="grid-item"><img src="./media/cardgameback.png" alt="Image 6"></div> 
+        <div id="slot_G" class="grid-item"><img src="./media/cardgameback.png" alt="Image 7"></div> 
+        <div id="slot_H" class="grid-item"><img src="./media/cardgameback.png" alt="Image 8"></div> 
+        <div id="slot_I" class="grid-item"><img src="./media/cardgameback.png" alt="Image 9"></div> 
+        <div id="slot_J" class="grid-item"><img src="./media/cardgameback.png" alt="Image 10"></div> 
+        <div id="slot_K" class="grid-item"><img src="./media/cardgameback.png" alt="Image 11"></div> 
+        <div id="slot_L" class="grid-item"><img src="./media/cardgameback.png" alt="Image 12"></div> 
+        <div id="slot_M" class="grid-item"><img src="./media/cardgameback.png" alt="Image 13"></div> 
+        <div id="slot_N" class="grid-item"><img src="./media/cardgameback.png" alt="Image 14"></div> 
+        <div id="slot_O" class="grid-item"><img src="./media/cardgameback.png" alt="Image 15"></div> 
+        <div id="slot_P" class="grid-item"><img src="./media/cardgameback.png" alt="Image 16"></div> 
+    </div>
+    <script type="text/javascript" src="./logic.js"></script>
+</body>
+</html>
